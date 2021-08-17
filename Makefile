@@ -56,4 +56,9 @@ logs:
 clean:
 	-docker rm -f $(NAME)
 
+git:
+	git add .
+	git commit -m "update"
+	git push
+
 release: build push
